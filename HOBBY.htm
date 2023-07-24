@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<head>
+    <title>changing backgroud image using css   
+    </title>
+    <style>
+body{
+    margin: 0;
+    padding: 0;
+    font-family: rial;
+}
+
+.container{
+
+    align-items: center ;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: a;
+    animation: animate 16s ease-in-out infinite;
+}
+.outer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.details{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.details h1{
+    font-size: 4em;
+    color: black;
+}
+.details h2{
+    text-transform: capitalize;
+}
+.details h2 span:nth-child(1){
+    color: red;
+}
+.details h2 span:nth-child(2){
+    color: yellow;
+}
+@keyframes animate{
+    0%,25%{
+        background-image: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2V8ZW58MHx8MHx8&w=1000&q=80");
+
+    }
+    50%{
+        background-image: url("https://i.insider.com/5e83756d487c225d3b6e1c86?width=1000&format=jpeg&auto=webp");
+    }
+    75%{
+        background-image: url("https://images.unsplash.com/photo-1444080748397-f442aa95c3e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&h=500&q=60");
+    }
+    100%{
+        background-image: url("https://media.istockphoto.com/id/646615252/photo/starry-sky-with-pink-milky-way-night-landscape-with-alone-trees-on-the-hill-against-colorful.jpg?s=612x612&w=0&k=20&c=f97hQJMg4KFKYKwGGf1NPdued57Ab4Sie_dvwua_IYw=");
+    }
+    
+}
+
+.hobbies {
+    height: 10px;
+    width: 80%;
+    background-size: 300%;
+    background-position: center;
+    padding: 50px;
+    opacity: 1;
+    }
+    
+    .hobbies h2 {
+    color: #dfdee4;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    }
+    
+    .hobbies div {
+    background-color: rgba(216, 211, 211, 0.9);
+    padding: 3%;
+  height: auto;
+    margin-bottom: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0,0.5);
+}
+    .hobbies div h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    }
+    
+    .hobbies ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+    
+    .hobbies ul li {
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 1.5;
+    }
+    
+    
+    .hobbies ul li a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+    }
+    
+    .hobbies ul li a:hover {
+    color: #c00;
+    }
+    .h2{
+        text-emphasis-color: red;
+    }
+    </style>
+     <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title> Hobby section </title>
+
+</head>
+<body>
+     <!--===== HEADER =====-->
+     <header class="l-header">
+        <nav class="nav bd-grid" style="height: calc(var(--header-height) + 0.4rem);">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="overlay-content">
+
+<a href="card.htm">My Profile Card</a>
+<a href="starup.htm">Startup</a>
+<a href="contct.htm">Contact</a>
+</div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.display = "none";
+}
+</script>
+                
+
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link active">Home</a></li>
+                    
+                    <li class="nav__item"><a href="contct.htm" class="nav__link">Contact</a></li>
+                    
+                    </ul>
+                        
+                </div>
+            
+
+            
+        </nav>
+    </header>
+    <center>
+    <section>
+    <div class="container">
+       
+        <section class="hobbies">
+            <br><br>
+            <h2>My Hobbies</h2>
+            <div class="articles">
+            <ul>
+            <li>Articles</li>
+            <li> Music</li>
+            <li> Painting</li>
+            <li> Cricket</li>
+            
+            <li><a href="#">Harvard Business Review</a></li>
+            </ul>
+            </div>
+           
+            
+            </div>
+        </section>
+
+        
+      
+    </div>
+</section>
+</center>
+</body>

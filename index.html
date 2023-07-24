@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="st.css" id="theme-style">
+        <style>
+            body{
+            background-color: rgb(201, 197, 197);
+            }
+            .dark-mode {
+  background-color: rgb(49, 47, 47);
+  color: white;
+}
+video{
+    width:50%;
+    margin:1% 25% 2% 25;
+}         
+details  summary {
+  padding: 1px;
+  width: 80px;
+  background-color: orange;
+  border: none;
+  box-shadow: 0px 0px 0px #bbbbbb;
+  cursor: pointer;
+}
+
+details  p {
+  background-color: #eeeeee;
+  padding: 1px;
+  margin: 0;
+  box-shadow: 1px 1px 1px #bbbbbb;
+}
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+
+#myBtn:hover {
+  background-color: #f5eaea;
+}
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website </title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="HOBBY.htm" >Hobby</a>
+    <a href="card.htm">My Profile Card</a>
+    <a href="starup.htm">Startup</a>
+    <a href="contct.htm">Contact</a>
+  </div>
+  </div>
+  <span style="font-size:30px;cursor:pointer;color: rgb(165, 167, 165);" onclick="openNav()">&#9776; </span>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.display = "block";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.display = "none";
+    }
+    </script>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About
+                        </li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Qulification</a></li>
+                        <li class="nav__item"><a href="contct.htm" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><button onclick="myFunction()">Dark/Light Theme</button></li>
+                        </ul>
+                            <script>
+                    
+                                function myFunction() {
+                                   var element = document.body;
+                                   element.classList.toggle("dark-mode");
+                                }
+                                </script>
+                    </div>
+                
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Vanraj Parmar</span><br> Student Of DDU <br>University</h1>
+
+                    <a href="contct.htm" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://instagram.com/vanraj_753?igshid=ZGUzMzM3NWJiOQ==" class="home__social-icon"><i><img src="assets/img/i.jpg.jpg" class="skills__img" alt="HTML tutorial" style="width:42px;height:42px;"></i></a>
+                    <a href="https://www.facebook.com/parmar.vanraj.79219754?mibextid=ZbWKwL" class="home__social-icon"><i><img src="assets/img/f.jpg.jpg" class="skills__img" alt="HTML tutorial" style="width:42px;height:42px;"></i></a>
+                </div>
+            
+                <div class="home__img">
+                    
+                            <img class="home__blob-img" src="assets/img/Profile.jpg.jpeg" style="border-radius: 50%;" width="100" height="120" alt="My Photo">
+                    </svg>
+                </div>
+            
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About Me</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img"> 
+                        <img src="assets/img/about.jpg.jpeg" alt="my profile picture" height="100" width="100">
+                    </div>
+                    
+                    <div>
+
+                        <h2 class="about__subtitle">I'am Vanraj Parmar</h2>
+                        <p class="about__text">Hi, My name is <b>Vanraj Parmar</b> and I am student of well known university <b>DDU</b> at Nadiad. Recently i complete my 12th and take admissin in DDU.Now i am prossuing m    y Dgree from <b>DDU Univercity.</b>I am from Khambhat and currenty living in Nadiad.My Hobby is to play cricket ,reading and writing. </p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text" class="skills__img">I pass HSC  from <b>Laksh School Of Science,Bamnava</b>, in 2022</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">Web Devloping</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">Problem Solving </span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img class='skills__icon' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZhJREFUSEu1lY0tBUEUhb/XgQ7oABWgAjpABagAFaACVCAqoAN0QAWogHybmZe7u7M78yRu8pLdvJlzzj33Zxf8cyxWxN8CvoD31ns1gjXgBNhNv4j7DFwDj3NkcwSqfQA2KmrPgFdAwlFMEVwA5602pHN7JZISQSv4MeDZdcDnu2RjL5MhwUGypSZekA/gMIAfAbfAdrKsw4gEev0CWNjWyMozuB1mVjcZIBKcAlcVZAEF2ykoNyPtMpb1iAR2wuYMgb2vNRIMldtJqtci4z6dW1qkLZ8z4FHdENxrFljiGJ34mMHPBIGADlqpoA7Z/sS9ZgJtkaBmy5CnSqCPqjZKtliTuSkfEehjBJyyxYLacbljSg69Aa6aXg3ikGV1Q+VmpWW5W6b6QhEuwh6B73EWSra0DOB3Ut+t9OGq0Janguexk2okvaVXWnaS5IHSCp+1pmaLxJdpVSxFTK3rnElNbfx/BF6yKF6wBS18bT855Z5z1Yyi9sn0gpddA3FiLWT+itkt7qFitBAMs3JvFdX+NYNV6jA6+wsC/mMZ0yCkqwAAAABJRU5ErkJggg=="/>
+                                <span class="skills__name">Playing Cricket</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                       
+                        <div >
+                            <div >
+                                <i><p class="skills__img"><b>So I have some more skill but this is most likely</b></p></i>
+                                
+                            </div>
+                            
+                        </div>
+                     
+                    </div>           
+                        <img src="https://www.shutterstock.com/image-vector/skill-levels-knob-button-increasing-260nw-1484062181.jpg" alt="my profile picture" height="400" width="400" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            
+ <!--===== Work =====-->
+ <section  class="work section" id="work">
+    <h2 class="section-title">My work Experience</h2>
+
+    <table class="skills__img">
+      <tr>
+        <th>Company Name</th>
+        <th>Job Title</th>
+        <th>Employment Dates</th>
+      </tr>
+      <tr>
+        <td><b>[TCS]</b></td>
+        <td><b>[Employer]</b></td>
+        <td><b>[12th July 2018]</b></td>
+      </tr>
+     <tr>
+        <td><b>[Flipkart]</b></td>
+        <td><b>[Web Devloper]</b></td>
+        <td><b>[30th July 2020]</b></td>
+      </tr>
+    </table>
+</section>
+<section id="video">
+   <center>
+    <h2 class="section-title ">Cricket Video</h2><br><video class="skills__img" src="assets/img/cricket.mp4" controls autoplay>
+</video></center>
+</section>
+<!--===== Qulification =====-->
+<center>
+<section class="contact section" id="contact">
+  <h2 class="section-title">My Qulification</h2>
+  <section>
+      <p class="skills__img" style="margin:auto;"><b>NAME:</b>Parmar Vanrajbhai Jayantibhai</p>
+
+<table class="skills__img">
+<tr>
+<th>Sr.No</th>
+<th>Exam</th>
+<th>Board/Univercity</th>
+<th>Percentile</th>
+</tr>
+<tr>
+<td>1.</td>
+<td>SSC</td>
+<td>Gujrat Board</td>
+<td>98.64</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>HSC</td>
+<td>Gujarat Board</td>
+<td>99.81</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>B.TECH</td>
+<td>DDU</td>
+<td>--</td>
+</tr>
+</table>
+
+</section><br><br>
+</center>
+<section>
+    <h2 class="section-title">Jigsaw Puzzle Game</h2>
+    <div >
+        <i><p class="skills__img"><b>If You Want to play the game please click on the Image...</b></p></i>
+        
+    </div><br>
+    <a href="nat.htm" ><i><img src="assets/img/j3.jpg.jpg" class="skills__img" alt="HTML tutorial" style="width:400px;height:300px;"></i></a>
+
+</section>
+
+            <!--===== CONTACT =====-->
+            <section>
+                <h2 class="section-title">Fedback</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input" required>
+                        <input type="text" placeholder="Mobile No" class="contact__input" required>
+                        <input type="mail" placeholder="Email" class="contact__input" required>
+                        <textarea name="" placeholder="Give Your Fedback" id="" cols="0" rows="10" class="contact__input" required></textarea>
+                        <input type="submit" value="Give" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><b>↑</b></button>
+
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+            </div>
+            <center>
+            <div class="pagination skills__img">
+                <a href="#">&laquo;</a>
+                <a href="#" class="active">1</a>
+                <a href="HOBBY.htm" >2</a>
+               
+                <a href="#">&raquo;</a>
+              </div>
+              </center>
+              
+        
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Vanraj</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/parmar.vanraj.79219754?mibextid=ZbWKwL" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://instagram.com/vanraj_753?igshid=ZGUzMzM3NWJiOQ==" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="footer__copy">&#169; Created By Vanraj Parmar</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+        
+    </body>
+</html>
